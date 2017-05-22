@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+.top-menu {
+  height: 45px;
+  background: #333;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto; /* Выравнивание див по центру */
+}
+
+.top-menu .container {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;  /* Подчеркивание текста */
+  transition: color 0.3s;    /* Какие свойства анимировать и длительнность */
+}
+
+.top-menu a:hover {    /* Стиль при наведении */
+  color: #bbb;
+}
+
+.hero {
+  height: 620px;
+  background: url('https://images.apple.com/v/home/df/images/heroes/today_xlarge.jpg') no-repeat;
+  background-position: center center;
+  background-size: 133%;
+  color: #333;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.hero p {
+  margin: 0;
+}
+
+.hero .first-line {
+  font-size: 19px;
+  font-weight: 500;
+  margin-bottom: 9px;
+}
+
+.hero .second-line {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero .third-line {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+.hero a {
+  font-size: 19px;
+  font-weight: 300;
+  color: #777;
+  text-decoration: none;
+}
+
+.hero a:hover {
+  color: #297eff;
+}
+
+.hero a:first-of-type {   /* Применяется только к первой ссылке (:second-of-type, :nth-of-type(N)) */
+  margin-right: 35px;
+}
+
+.product-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.card {
+  flex: 1;
+  margin-right: 2px;
+}
+
+.card:last-of-type {
+  margin-right: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.links {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+.links .container {
+  display: flex;
+}
+
+.column {
+  flex: 1;     /* Равная ширина */
+}
+
+.column h6 {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+}
+
+.column ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.column li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+.column a {
+  color: #777;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.column a:hover {
+  color: #333;
+  text-decoration: underline;
+}
